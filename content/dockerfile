@@ -1,0 +1,13 @@
+FROM python:3.8-slim-buster
+
+
+WORKDIR /app
+
+
+COPY content_test.py .
+
+
+RUN pip install requests
+
+
+CMD ["python", "./content.py"]

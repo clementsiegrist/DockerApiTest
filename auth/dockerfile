@@ -1,0 +1,13 @@
+FROM python:3.8-slim-buster
+
+
+WORKDIR /app
+
+
+COPY authentication_test.py .
+
+
+RUN pip install requests
+
+
+CMD ["python", "./authentication.py"]
