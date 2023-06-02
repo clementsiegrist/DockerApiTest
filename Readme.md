@@ -16,11 +16,11 @@ This script builds the Docker images for the tests and then starts the container
 
 There are three tests:
 
-    1. Authentication test (authentificaton.py): This test checks the /permissions endpoint with valid and invalid user credentials.
+1. Authentication test `auth/authentificaton.py`: This test checks the /permissions endpoint with valid and invalid user credentials.
 
-    2. Authorization test (authorize.py): This test checks the /v1/sentiment and /v2/sentiment endpoints to ensure users have the correct permissions.
+2. Authorization test `autho/authorize.py`: This test checks the /v1/sentiment and /v2/sentiment endpoints to ensure users have the correct permissions.
 
-    3. Content test (content.py): This test checks the sentiment analysis model's responses.
+3. Content test `content/content.py`: This test checks the sentiment analysis model's responses.
 
 Each test runs in its own Docker container, as defined in the docker-compose.yml file.
 
