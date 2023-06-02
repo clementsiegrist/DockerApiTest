@@ -5,10 +5,10 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 
-COPY authorization_test.py .
+COPY authorize.py .
 
 
 RUN pip install requests
 
 
-CMD ["python", "./authorization_test.py"]
+CMD ["python", "./authorize.py"]
