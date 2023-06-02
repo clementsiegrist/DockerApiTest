@@ -22,7 +22,7 @@ There are three tests:
 
 3. Content test `content/content.py`: This test checks the sentiment analysis model's responses.
 
-Each test runs in its own Docker container, as defined in the docker-compose.yml file.
+Each test runs in its own Docker container, as defined in the `docker-compose.yml` file.
 
 ## Design Choices
 
@@ -30,5 +30,5 @@ This project uses Docker to ensure that tests run in a consistent environment. E
 
 The tests are written in Python, using the requests library to send HTTP requests to the API.
 
-The logs from the tests are written to a api_test.log file. This is done by setting the LOG environment variable to 1 in the docker-compose.yml file.
+The logs from the tests are written to a `api_test.log` file. This is done by setting the LOG environment variable to 1 in the `docker-compose.yml` file.
 
